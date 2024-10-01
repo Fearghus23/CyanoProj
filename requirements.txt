@@ -1,0 +1,8 @@
+torch
+torchvision
+opencv-python-headless
+numpy
+pandas
+effdet
+flask
+sqlite3

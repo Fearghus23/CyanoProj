@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Cyanobacteria Counts</title>
+</head>
+<body>
+    <h1>Cyanobacteria Counts per Image</h1>
+    <table border="1">
+        <tr>
+            <th>Image ID</th>
+            <th>Bacteria Counts</th>
+        </tr>
+        {% for item in counts_list %}
+        <tr>
+            <td>{{ item.image_id }}</td>
+            <td>
+                {% for k, v in item.counts.items() %}
+                    {{ k }}: {{ v }}<br>
+                {% endfor %}
+            </td>
+        </tr>
+        {% endfor %}
+    </table>
+</body>
+</html>
